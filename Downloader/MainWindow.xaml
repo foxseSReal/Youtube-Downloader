@@ -16,13 +16,15 @@
 
         <!--Left Panel-->
         <StackPanel Grid.Column="0" Orientation="Vertical">
+            <TextBox x:Name="_link" Width="500" Style="{StaticResource MaterialDesignTextBoxBase}" materialDesign:HintAssist.Hint="Paste URL" Foreground="White" FontSize="16"/>
+
 
         </StackPanel>
 
         <!--Right Panel-->
         <StackPanel Grid.Column="1" Orientation="Vertical">
             <TextBlock Text="Music, Video Everything" Style="{StaticResource textBlock1}"/>
-            <Separator Width="260" Background="Aqua" Margin="0 10 0 20"/>
+            <Separator Width="260" Background="Orange" Margin="0 10 0 20"/>
             <ListView>
                 <ListViewItem ToolTip="Double Click and Play Song"  MouseDoubleClick="ListViewItem_MouseDoubleClick" Content="Download Item 1" Style="{StaticResource ListViewItem}"/>
                 <ListViewItem ToolTip="Double Click and Play Song"  Content="Download Item 2" Style="{StaticResource ListViewItem}"/>
