@@ -24,9 +24,9 @@
 
             <!--#region Convert Button-->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="ConvertButton" Margin="0 20 0 0" Content="Convert" FontSize="18" Width="200" Style="{StaticResource MaterialDesignRaisedDarkButton}"/>
+                <Button x:Name="ConvertButton" Click="Convert_ButtonClick" Margin="0 20 0 0" Content="Convert" FontSize="18" Width="200" Style="{StaticResource MaterialDesignRaisedDarkButton}"/>
                 <TextBlock Text=" to" Foreground="White" Opacity="0.7" FontFamily="Arial" Margin="0 10 0 0" Style="{StaticResource MaterialDesignHeadline4TextBlock}"/>
-                <ComboBox Text="Chose One" Foreground="Orange" FontSize="16" FontWeight="SemiBold" Width="120" Margin="10 10 0 0" materialDesign:HintAssist.HelperText="MP4, M4A or MP3" materialDesign:HintAssist.Hint="Chose One" Style="{StaticResource MaterialDesignFilledComboBox}">
+                <ComboBox Text="Chose One" x:Name="ConvertToComboBox" Foreground="Orange" FontSize="16" FontWeight="SemiBold" Width="120" Margin="10 10 0 0" materialDesign:HintAssist.HelperText="MP4, M4A or MP3" materialDesign:HintAssist.Hint="Chose One" Style="{StaticResource MaterialDesignFilledComboBox}">
                     <ComboBoxItem Content="MP4"/>
                     <ComboBoxItem Content="M4A"/>
                     <ComboBoxItem Content="MP3"/>

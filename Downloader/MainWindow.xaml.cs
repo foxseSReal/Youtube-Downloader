@@ -19,5 +19,16 @@ namespace Downloader
 
 
         }
+
+        private void Convert_ButtonClick(object sender, RoutedEventArgs e)
+        {
+                
+            if (ConvertToComboBox.SelectedValue == null) MessageBox.Show("Lütfen Dönüştürmek İstediğiniz Formatı Seçiniz", "Hata", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            else
+            {
+
+            }
+        }
     }
 }
