@@ -1,0 +1,34 @@
+﻿<Window x:Class="Downloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Downloader"
+        Background="{StaticResource MaterialDesignLightSeparatorBackground}"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="700"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Left Panel-->
+        <StackPanel Grid.Column="0" Orientation="Vertical">
+
+        </StackPanel>
+
+        <!--Right Panel-->
+        <StackPanel Grid.Column="1" Orientation="Vertical">
+            <TextBlock Text="Music, Video Everything" Style="{StaticResource textBlock1}"/>
+            <Separator Width="260" Background="Aqua" Margin="0 10 0 20"/>
+            <ListView>
+                <ListViewItem ToolTip="Double Click and Play Song"  MouseDoubleClick="ListViewItem_MouseDoubleClick" Content="Download Item 1" Style="{StaticResource ListViewItem}"/>
+                <ListViewItem ToolTip="Double Click and Play Song"  Content="Download Item 2" Style="{StaticResource ListViewItem}"/>
+                <ListViewItem ToolTip="Double Click and Play Song"  Content="Download Item 3" Style="{StaticResource ListViewItem}"/>
+            </ListView>
+        </StackPanel>
+
+    </Grid>
+</Window>
